@@ -1,2 +1,20 @@
-<h1><%= t('welcome') %></h1>
+<h1><%= t('index.welcome',default: 'Not found...') %></h1>
+
+
+<%# 
+t('index.welcome', scope: :pages)
+t(:welcome, scope: 'pages.index')
+t(:welcome, scope: [:pages, :index]) %>
+
+<h1><%= t('key2.nest1',default: 'Not found...') %></h1>
+
+<h1><%= t('key2.nest2.nest3',default: 'Not found...') %></h1>
+
+
 <%= I18n.available_locales %>
+
+
+  <ul>
+    <li><%= link_to 'Русский', root_path(locale: :ru) %></li>
+    <li><%= link_to 'English', root_path(locale: :en) %></li>
+  </ul>

@@ -30,4 +30,10 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  welcome: "Hello world"
+  index:
+    welcome: "Welcomesssss!"
+  key2:
+    nest1: "First nested inside key2"
+    nest2:
+      nest3: "First nest inside Second Nest"
+    
